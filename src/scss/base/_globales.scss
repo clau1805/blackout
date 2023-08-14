@@ -23,8 +23,6 @@ p {
     font-family: v.$font_principal;
     font-size: 1.6rem;
     font-weight: 300;
-    color: v.$white;
-
 }
 
 
@@ -60,31 +58,14 @@ img {
 
 
 h1 {
-    font-size: 4rem;
+    font-family: v.$font_secondary;
+    font-size: 3rem;
     margin: 0;
 
-    span {
-        font-size: 3rem;
-    }
+
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0;
-}
-
-
-@include m.phone {
-    h3 {
-
-        font-size: 2.6rem;
-        font-weight: 300;
-
-    }
-}
-
-@include m.tablet {
-    h3 {
-        font-size: 1.8rem;
-    }
 }

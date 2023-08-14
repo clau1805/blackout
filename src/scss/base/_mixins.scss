@@ -33,7 +33,7 @@
 }
 
 @mixin forK {
-    @media (min-width: v.$forK) {
+    @media (min-width: v.$fourK) {
         @content;
     }
 }

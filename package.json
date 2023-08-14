@@ -1,12 +1,12 @@
 {
-  "name": "west_wind_restaurant",
+  "name": "blackout",
   "version": "1.0.0",
-  "description": "Delivery App, BEM, SASS, Gulp, CSS Grid",
+  "description": "Blackout grupo musical",
   "main": "index.js",
   "scripts": {
     "dev": "gulp"
   },
-  "author": "Juan De la torre @codigoconjuan",
+  "author": "Clau",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
@@ -15,11 +15,11 @@
     "gulp-avif": "^1.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "postcss": "^8.3.6",
-    "sass": "^1.37.5"
+    "sass": "^1.65.1"
   },
   "browserslist": [
     "last 1 version",
