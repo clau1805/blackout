@@ -1,0 +1,90 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$font_principal;
+    font-size: 1.6rem;
+
+}
+
+p {
+    font-family: v.$font_principal;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: v.$white;
+
+}
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include m.tablet {
+        width: 70%;
+    }
+
+    @include m.desktop {
+        width: 40%;
+    }
+
+    @include m.hd {
+        width: 30%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: v.$white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+
+    span {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+@include m.phone {
+    h3 {
+
+        font-size: 2.6rem;
+        font-weight: 300;
+
+    }
+}
+
+@include m.tablet {
+    h3 {
+        font-size: 1.8rem;
+    }
+}
