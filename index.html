@@ -15,9 +15,71 @@
 </head>
 
 <body>
+    <header class="menu ">
+        <div class=" menu__grid">
+            <!--Logo-->
+            <img src="./src/img/logo_blackout.png" alt="logo Blackout" class="menu__logox2">
+            <!--Logo-->
 
-    <h1>Blackout</h1>
+            <!--boton hamburguesa-->
+            <button id="boton-hamburguesa" class="menu__boton-hamburguesa">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </span>
+            </button>
+            <!--boton hamburguesa-->
 
+            <!--Nav-->
+            <nav id="menu-hamburguesa">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Tienda</a></li>
+                </ul>
+            </nav>
+            <!--Nav-->
+        </div>
+
+    </header>
+
+    <section class="header">
+        <img src="./src/img/blackout_grupo-musical.jpg" alt="" class="header__bg">
+        <h1 class="header__heading">Nuevo album <span>Soles al mar</span> </h1>
+    </section>
+
+
+
+
+
+    <script>
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+            var menu = document.getElementById("menu-hamburguesa");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+            var menu = document.getElementById("menu-hamburguesa");
+            if (menu.style.display === "flex") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "flex";
+            }
+
+            menu.classList.toggle("mostrando");
+            // icono.classList.toggle("rotar");
+        });
+    </script>
 </body>
 
 </html>

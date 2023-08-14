@@ -1,0 +1,54 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+
+.header {
+
+
+    &__bg {
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+
+        @include m.desktop {
+            width: -webkit-fill-available;
+        }
+
+    }
+
+    &__heading {
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        padding-top: 28rem;
+
+        span {
+            font-weight: 100;
+            z-index: 1;
+            position: relative;
+            text-align: center;
+            padding-top: 3rem;
+            font-style: italic;
+        }
+
+
+        @include m.tablet {
+            padding-top: 56rem;
+        }
+
+        @include m.desktop {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 5rem;
+            padding-top: 28rem;
+        }
+
+        @include m.hd {
+            padding-right: 10rem;
+            padding-top: 38rem;
+        }
+    }
+
+}

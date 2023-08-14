@@ -1,0 +1,168 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+
+#menu-hamburguesa {
+
+    display: flex;
+    justify-content: flex-start;
+
+    @include m.tablet {
+        display: none;
+        justify-content: flex-end;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#menu-hamburguesa ul li {
+    padding: 1.5rem 0;
+}
+
+#menu-hamburguesa ul li a {
+    color: v.$black;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+
+
+}
+
+#boton-hamburguesa {
+    background-color: inherit;
+    color: v.$black;
+    font-size: 4rem;
+    font-family: sans-serif;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin-inline-start: auto;
+
+
+}
+
+
+
+
+/* Transición suave al desplegar el menú */
+#menu-hamburguesa {
+    /* ...otros estilos... */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+#menu-hamburguesa.mostrando {
+    max-height: 50rem;
+    width: 100%;
+    /* Ajustar este valor según la altura máxima del menú */
+}
+
+
+
+/* Rotar el icono de la hamburguesa al abrir el menú */
+#boton-hamburguesa span.rotar {
+    transform: rotate(90deg);
+}
+
+
+
+/* Estilos del menú horizontal para pantallas grandes */
+@include m.tablet {
+    #boton-hamburguesa {
+        display: none;
+    }
+
+    #menu-hamburguesa {
+        display: block;
+        max-height: initial;
+        overflow: initial;
+    }
+
+    #menu-hamburguesa ul {
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        align-items: center;
+    }
+
+    #menu-hamburguesa:first-of-type {
+        justify-content: flex-end;
+    }
+
+    #menu-hamburguesa ul li {
+        padding: 3rem 2rem;
+    }
+
+    #boton-hamburguesa {
+
+        background-color: v.$terciary;
+        color: v.$white;
+        font-size: 2.4re;
+        font-family: sans-serif;
+
+    }
+}
+
+
+
+.menu {
+
+
+
+
+
+    &__grid {
+        background-color: v.$terciary;
+
+        @include m.tablet {
+
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__imagen {
+        width: 5rem;
+        height: 5rem;
+        margin-block-start: auto;
+
+        @include m.tablet {
+            width: 6rem;
+            height: 6rem;
+            margin-inline-start: auto;
+            cursor: pointer;
+        }
+    }
+
+
+
+    &__logox2 {
+        display: none;
+
+
+
+        @include m.tablet {
+            display: flex;
+            width: 15%;
+            padding: auto auto auto 2rem;
+            margin-left: 2rem;
+
+        }
+
+        @include m.desktop {
+            width: 10%;
+
+        }
+
+        @include m.hd {
+            width: 8%;
+
+        }
+    }
+}
