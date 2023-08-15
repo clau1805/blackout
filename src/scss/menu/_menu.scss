@@ -101,7 +101,7 @@ li {
 
     #boton-hamburguesa {
 
-        background-color: v.$terciary;
+        background-color: v.$blue;
         color: v.$white;
         font-size: 2.4re;
         font-family: sans-serif;
@@ -118,7 +118,7 @@ li {
 
 
     &__grid {
-        background-color: v.$terciary;
+        background-color: v.$blue;
 
         @include m.tablet {
 

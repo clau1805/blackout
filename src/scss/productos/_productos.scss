@@ -4,16 +4,16 @@
 
 
 .productos {
-    margin: 2rem;
+    background-color: v.$black;
+    padding: 4rem;
+    margin: 3rem 0;
 
-    @include m.fourK {
-        margin: 15rem;
-    }
+
 
     &__grid {
 
         display: flex;
-        gap: 6rem;
+        gap: 2rem;
         flex-direction: column;
         justify-content: center;
 
@@ -28,18 +28,23 @@
         display: grid;
         justify-items: center;
         margin-bottom: 2rem;
+        color: v.$white;
 
         h3 {
             text-align: center;
             margin-top: 0;
+
         }
 
         p {
             text-align: center;
             font-weight: 500;
             margin-top: 0;
+            font-size: 3rem;
 
         }
+
+
     }
 
     &__button {
@@ -48,13 +53,14 @@
         border-radius: 1rem;
         max-width: 25rem;
         cursor: pointer;
+        background-color: transparent;
 
         a {
-            color: v.$black;
+            color: v.$white;
         }
 
         &:hover {
-            background-color: #183c4b;
+            background-color: v.$primary;
 
             border: none;
             padding: 2rem 5rem;
@@ -69,7 +75,8 @@
     }
 
     &__imagen {
-        margin-bottom: 5rem;
+
+        margin-bottom: 2rem;
         transition-property: transform;
         transition-duration: 3ms;
 
@@ -81,17 +88,27 @@
             transform: scale(1.1);
 
         }
+
+        img {
+            width: 30rem;
+            height: auto;
+        }
     }
 
 
     &__vermas {
-        font-size: 2rem;
+        font-size: 1.8rem;
         display: flex;
         justify-content: center;
-        padding: 2rem 0;
+        padding-top: 2rem;
+
+        @include m.tablet {
+            padding-top: 5rem;
+        }
 
         a {
-            color: v.$secondary;
+            color: v.$blue;
+            font-weight: 400;
         }
     }
 }
