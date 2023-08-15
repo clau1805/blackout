@@ -547,6 +547,7 @@ li {
   position: relative;
   text-align: center;
   padding-top: 28rem;
+  color: #313131;
 }
 .header__heading span {
   font-weight: 100;
@@ -558,20 +559,91 @@ li {
 }
 @media (min-width: 768px) {
   .header__heading {
-    padding-top: 56rem;
+    color: #313131;
+    padding-top: 55rem;
   }
 }
 @media (min-width: 1024px) {
   .header__heading {
+    color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
-    padding-right: 5rem;
-    padding-top: 28rem;
+    padding-top: 25rem;
   }
 }
 @media (min-width: 1920px) {
   .header__heading {
-    padding-right: 10rem;
-    padding-top: 38rem;
+    color: #FFFFFF;
+    padding-top: 35rem;
   }
+}
+.header__button {
+  background-color: #3c606f;
+  border: none;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  max-width: 25rem;
+  position: relative;
+  margin-top: 2rem;
+}
+.header__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__info {
+  text-align: center;
+  padding: 0 2rem;
+}
+@media (min-width: 1024px) {
+  .header__info {
+    position: relative;
+    color: #FFFFFF;
+    padding: 0 30rem;
+  }
+}
+@media (min-width: 1920px) {
+  .header__info {
+    padding: 0 30rem;
+  }
+}
+
+.disco {
+  background-color: #FFFFFF;
+  position: absolute;
+  margin-top: 4rem;
+}
+@media (min-width: 1024px) {
+  .disco {
+    margin-top: 48rem;
+  }
+}
+@media (min-width: 1920px) {
+  .disco {
+    margin-top: 70rem;
+  }
+}
+@media (min-width: 2800px) {
+  .disco {
+    margin-top: 150rem;
+  }
+}
+.disco__grid {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .disco__grid {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.disco__imagen {
+  position: absolute;
+  width: 10rem;
+}
+.disco__info {
+  text-align: center;
+  padding: 0 2rem;
 }/*# sourceMappingURL=app.css.map */

@@ -32,7 +32,7 @@
     }
 }
 
-@mixin forK {
+@mixin fourK {
     @media (min-width: v.$fourK) {
         @content;
     }

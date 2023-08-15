@@ -23,6 +23,7 @@
         position: relative;
         text-align: center;
         padding-top: 28rem;
+        color: v.$black;
 
         span {
             font-weight: 100;
@@ -35,20 +36,53 @@
 
 
         @include m.tablet {
-            padding-top: 56rem;
+            color: v.$black;
+            padding-top: 55rem;
         }
 
         @include m.desktop {
+            color: v.$white;
             display: flex;
             justify-content: flex-end;
-            padding-right: 5rem;
-            padding-top: 28rem;
+
+            padding-top: 25rem;
         }
 
         @include m.hd {
-            padding-right: 10rem;
-            padding-top: 38rem;
+            color: v.$white;
+            padding-top: 35rem;
         }
     }
 
+
+    &__button {
+        background-color: v.$primary;
+        border: none;
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        max-width: 25rem;
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__info {
+        text-align: center;
+        padding: 0 2rem;
+
+        @include m.desktop {
+            position: relative;
+            color: v.$white;
+            padding: 0 30rem;
+        }
+
+        @include m.hd {
+            padding: 0 30rem;
+        }
+    }
 }

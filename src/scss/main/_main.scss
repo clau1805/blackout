@@ -1,0 +1,45 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+
+.disco {
+    background-color: v.$white;
+    position: absolute;
+    margin-top: 4rem;
+
+
+    @include m.desktop {
+        margin-top: 48rem;
+    }
+
+    @include m.hd {
+        margin-top: 70rem;
+    }
+
+    @include m.fourK {
+        margin-top: 150rem;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+
+        @include m.desktop {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__imagen {
+        position: absolute;
+        width: 10rem;
+
+    }
+
+    &__info {
+        text-align: center;
+        padding: 0 2rem;
+    }
+}
