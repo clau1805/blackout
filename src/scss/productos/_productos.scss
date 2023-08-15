@@ -6,11 +6,16 @@
 .productos {
     margin: 2rem;
 
+    @include m.fourK {
+        margin: 15rem;
+    }
+
     &__grid {
 
         display: flex;
         gap: 6rem;
         flex-direction: column;
+        justify-content: center;
 
         @include m.tablet {
             flex-direction: row;
