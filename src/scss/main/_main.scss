@@ -5,8 +5,8 @@
 
 .disco {
     background-color: v.$white;
-    position: absolute;
     margin-top: 4rem;
+    margin-bottom: 4rem;
 
 
     @include m.desktop {
@@ -14,7 +14,7 @@
     }
 
     @include m.hd {
-        margin-top: 70rem;
+        margin-top: 100rem;
     }
 
     @include m.fourK {
@@ -40,6 +40,38 @@
 
     &__info {
         text-align: center;
-        padding: 0 2rem;
+        padding: 6rem 2rem;
+
+        @include m.tablet {
+            padding: 0 4rem;
+        }
+
+        @include m.desktop {
+            padding: 0 6rem;
+        }
+
+        @include m.hd {
+            padding: 0 16rem;
+        }
+
+        @include m.fourK {
+            padding: 0 20rem;
+        }
     }
+
+    &__button {
+        background-color: v.$secondary;
+        border: none;
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        max-width: 25rem;
+        position: relative;
+        margin-top: 2rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #823d28;
+        }
+    }
+
 }
