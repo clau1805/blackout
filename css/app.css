@@ -7,7 +7,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -1225,12 +1224,18 @@ li {
 
 .informacion {
   padding: 0 2rem;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 .informacion__grid {
   display: grid;
   justify-content: center;
   justify-items: center;
+}
+@media (min-width: 768px) {
+  .informacion__grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
 .informacion__info {
   text-align: center;
@@ -1244,7 +1249,10 @@ li {
 }
 @media (min-width: 768px) {
   .informacion__precio {
-    margin-top: 6rem;
+    margin-top: 0;
+  }
+  .informacion__precio h3 {
+    font-size: 2.5rem;
   }
 }
 .informacion__lista {
