@@ -38,6 +38,12 @@
     }
 }
 
+@mixin fiveK {
+    @media (min-width: v.$fiveK) {
+        @content;
+    }
+}
+
 
 @mixin boton($color, $texto) {
     background-color: $color;

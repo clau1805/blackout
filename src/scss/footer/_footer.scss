@@ -36,7 +36,7 @@
         li {
 
             text-align: center;
-            padding-bottom: 1rem;
+            padding-bottom: 1.6rem;
 
             @include m.tablet {
                 padding-bottom: 0;
@@ -49,7 +49,7 @@
             margin: 0;
         }
 
-        ul li a {
+        a {
 
             &:hover {
                 text-decoration: overline;
@@ -60,7 +60,6 @@
         svg {
 
             &:hover {
-
                 color: v.$blue;
             }
         }

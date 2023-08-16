@@ -5,21 +5,26 @@
 
 .disco {
     background-color: v.$white;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
 
 
     @include m.desktop {
-        margin-top: 48rem;
+        margin-top: 55rem;
     }
 
     @include m.hd {
-        margin-top: 100rem;
+        margin-top: 75rem;
         margin-bottom: 15rem;
     }
 
     @include m.fourK {
-        margin-top: 150rem;
+        margin-top: 140rem;
+    }
+
+    @include m.fiveK {
+        margin-top: 215rem;
+
     }
 
     &__grid {
@@ -41,22 +46,27 @@
 
     &__info {
         text-align: center;
-        padding: 6rem 2rem;
+        max-width: none;
+        padding: 0 2rem;
+
 
         @include m.tablet {
             padding: 0 4rem;
+
         }
 
         @include m.desktop {
-            padding: 0 6rem;
+
+            max-width: 40rem;
         }
 
         @include m.hd {
-            padding: 0 16rem;
+
+            max-width: 50rem;
         }
 
         @include m.fourK {
-            padding: 0 20rem;
+            max-width: 50rem;
         }
     }
 

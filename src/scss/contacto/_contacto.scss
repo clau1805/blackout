@@ -128,3 +128,20 @@
 
 
 }
+
+
+
+.plataformas {
+    margin-bottom: 6rem;
+
+    &__grid {
+        display: flex;
+        gap: 2rem;
+
+        svg {
+            &:hover {
+                color: v.$blue;
+            }
+        }
+    }
+}

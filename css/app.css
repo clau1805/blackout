@@ -400,9 +400,11 @@ h2 {
   font-size: 1.8rem;
   font-family: sans-serif;
 }
+#menu-hamburguesa ul li a:hover {
+  text-decoration: overline;
+}
 #menu-hamburguesa ul li a svg:hover {
   color: #4085e6;
-  text-decoration: overline;
 }
 
 li {
@@ -611,23 +613,28 @@ li {
 
 .disco {
   background-color: #FFFFFF;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 10rem;
 }
 @media (min-width: 1280px) {
   .disco {
-    margin-top: 48rem;
+    margin-top: 55rem;
   }
 }
 @media (min-width: 1600px) {
   .disco {
-    margin-top: 100rem;
+    margin-top: 75rem;
     margin-bottom: 15rem;
   }
 }
 @media (min-width: 2500px) {
   .disco {
-    margin-top: 150rem;
+    margin-top: 140rem;
+  }
+}
+@media (min-width: 4000px) {
+  .disco {
+    margin-top: 215rem;
   }
 }
 .disco__grid {
@@ -647,7 +654,8 @@ li {
 }
 .disco__info {
   text-align: center;
-  padding: 6rem 2rem;
+  max-width: none;
+  padding: 0 2rem;
 }
 @media (min-width: 768px) {
   .disco__info {
@@ -656,17 +664,17 @@ li {
 }
 @media (min-width: 1280px) {
   .disco__info {
-    padding: 0 6rem;
+    max-width: 40rem;
   }
 }
 @media (min-width: 1600px) {
   .disco__info {
-    padding: 0 16rem;
+    max-width: 50rem;
   }
 }
 @media (min-width: 2500px) {
   .disco__info {
-    padding: 0 20rem;
+    max-width: 50rem;
   }
 }
 .disco__button {
@@ -1138,6 +1146,17 @@ li {
   width: 100%;
 }
 
+.plataformas {
+  margin-bottom: 6rem;
+}
+.plataformas__grid {
+  display: flex;
+  gap: 2rem;
+}
+.plataformas__grid svg:hover {
+  color: #4085e6;
+}
+
 .footer {
   padding: 2rem;
   background-color: #313131;
@@ -1162,7 +1181,7 @@ li {
 }
 .footer__ul li {
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 1.6rem;
 }
 @media (min-width: 768px) {
   .footer__ul li {
@@ -1176,7 +1195,7 @@ li {
     margin: 0;
   }
 }
-.footer__ul ul li a:hover {
+.footer__ul a:hover {
   text-decoration: overline;
 }
 .footer__ul svg:hover {
@@ -1366,6 +1385,11 @@ li {
   max-width: 25rem;
   cursor: pointer;
   background-color: transparent;
+}
+@media (min-width: 768px) {
+  .productos__button {
+    padding: 2rem 1rem;
+  }
 }
 .productos__button a {
   color: #313131;

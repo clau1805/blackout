@@ -63,6 +63,10 @@
         cursor: pointer;
         background-color: transparent;
 
+        @include m.tablet {
+            padding: 2rem 1rem;
+        }
+
         a {
             color: v.$black;
         }

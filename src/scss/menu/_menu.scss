@@ -25,10 +25,13 @@
     font-size: 1.8rem;
     font-family: sans-serif;
 
+    &:hover {
+        text-decoration: overline;
+    }
+
     svg {
         &:hover {
             color: v.$blue;
-            text-decoration: overline;
         }
     }
 
