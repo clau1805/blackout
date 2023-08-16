@@ -3,7 +3,6 @@
 
 
 
-
 .footer {
     padding: 2rem;
     background-color: v.$black;
@@ -47,6 +46,23 @@
         @include m.tablet {
             display: flex;
             gap: 4rem;
+            margin: 0;
+        }
+
+        ul li a {
+
+            &:hover {
+                text-decoration: overline;
+            }
+        }
+
+
+        svg {
+
+            &:hover {
+
+                color: v.$blue;
+            }
         }
     }
 }

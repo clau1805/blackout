@@ -400,6 +400,10 @@ h2 {
   font-size: 1.8rem;
   font-family: sans-serif;
 }
+#menu-hamburguesa ul li a svg:hover {
+  color: #4085e6;
+  text-decoration: overline;
+}
 
 li {
   list-style-type: none;
@@ -459,14 +463,14 @@ li {
     padding: 3rem 2rem;
   }
   #boton-hamburguesa {
-    background-color: #d4e2f5;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #313131;
     font-size: 2.4re;
     font-family: sans-serif;
   }
 }
 .menu__grid {
-  background-color: #d4e2f5;
+  background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .menu__grid {
@@ -507,6 +511,15 @@ li {
   .menu__logox2 {
     width: 8%;
   }
+}
+
+.activo {
+  text-decoration: overline;
+}
+
+.activo-footer {
+  color: #FFFFFF;
+  text-decoration: overline;
 }
 
 .header__bg {
@@ -1160,7 +1173,14 @@ li {
   .footer__ul {
     display: flex;
     gap: 4rem;
+    margin: 0;
   }
+}
+.footer__ul ul li a:hover {
+  text-decoration: overline;
+}
+.footer__ul svg:hover {
+  color: #4085e6;
 }
 
 .album {
