@@ -830,6 +830,8 @@ li {
     width: 75rem;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
   }
   .galeria__imagen:nth-child(3) {
     grid-column: 4/5;
@@ -1285,7 +1287,7 @@ li {
   margin-bottom: 5rem;
   padding: 0 3rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .nosotros__texto {
     padding: 0 20rem;
   }
