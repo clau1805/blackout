@@ -9,6 +9,11 @@
     align-items: center;
     margin-top: 8rem;
     margin-bottom: 4rem;
+    padding: 0;
+
+    @include m.tablet {
+        padding: 5rem;
+    }
 
 
 
