@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./build/css/app.css">
+</head>
+
+<body>
+    <header class="menu ">
+        <div class=" menu__grid">
+            <!--Logo-->
+            <img src="./src/img/logo_blackout.png" alt="logo Blackout" class="menu__logox2">
+            <!--Logo-->
+
+            <!--boton hamburguesa-->
+            <button id="boton-hamburguesa" class="menu__boton-hamburguesa">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </span>
+            </button>
+            <!--boton hamburguesa-->
+
+            <!--Nav-->
+            <nav id="menu-hamburguesa">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+            <!--Nav-->
+        </div>
+    </header>
+
+    <main>
+        <div class="album">
+            <div class="album__grid">
+
+                <div>
+                    <img class="album__imagen" src="./src/img/contraportada.png" alt="">
+
+                </div>
+
+                <div ">
+                    <img class=" album__imagen" src="./src/img/blackout_disco.png" alt="">
+
+                </div>
+
+                <div>
+                    <img class="album__imagen" src="./src/img/disco.png" alt="">
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div>
+            <h1 class="album__heading">Nuevo album <span>Soles al mar</span> </h1>
+        </div>
+
+        <div class="informacion">
+            <div class="informacion__grid">
+                <div class="informacion__info">
+                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus eos excepturi
+                        delectus earum inventore nemo amet, nam dignissimos quod id tempora. Perferendis officiis quos,
+                        architecto in ea quam facere.</p>
+                    <ul class="informacion__lista">
+                        <li>1. Soles al mar</li>
+                        <li>2. Adiós</li>
+                        <li>3. Marea alta </li>
+                        <li>4. Yo te conté </li>
+                        <li>5. Había una vez </li>
+                        <li>6. Venice Beach</li>
+                        <li>7. Arriba de nosotros</li>
+                        <li>8. Maravillas </li>
+                    </ul>
+                </div>
+                <div class="informacion__precio">
+                    <h3>$890 MXN</h3>
+                    <button class="disco__button"><a href="#">Añadir al Carrito > </a></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script>
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+            var menu = document.getElementById("menu-hamburguesa");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+            var menu = document.getElementById("menu-hamburguesa");
+            if (menu.style.display === "flex") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "flex";
+            }
+
+            menu.classList.toggle("mostrando");
+            // icono.classList.toggle("rotar");
+        });
+    </script>
+</body>
+
+</html>
