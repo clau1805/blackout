@@ -587,6 +587,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 1280px) {
+  .header__grid {
+    margin-bottom: 15rem;
+  }
 }
 .header__info {
   text-align: center;
@@ -623,18 +629,18 @@ li {
 }
 @media (min-width: 1600px) {
   .disco {
-    margin-top: 75rem;
+    margin-top: 85rem;
     margin-bottom: 15rem;
   }
 }
 @media (min-width: 2500px) {
   .disco {
-    margin-top: 140rem;
+    margin-top: 150rem;
   }
 }
-@media (min-width: 4000px) {
+@media (min-width: 3500px) {
   .disco {
-    margin-top: 215rem;
+    margin-top: 225rem;
   }
 }
 .disco__grid {
@@ -654,8 +660,14 @@ li {
 }
 .disco__info {
   text-align: center;
-  max-width: none;
   padding: 0 2rem;
+  margin: 6rem 0;
+}
+.disco__info span {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3rem;
+  font-style: italic;
 }
 @media (min-width: 768px) {
   .disco__info {
@@ -664,17 +676,17 @@ li {
 }
 @media (min-width: 1280px) {
   .disco__info {
-    max-width: 40rem;
+    max-width: 75rem;
   }
 }
 @media (min-width: 1600px) {
   .disco__info {
-    max-width: 50rem;
+    max-width: 85rem;
   }
 }
 @media (min-width: 2500px) {
   .disco__info {
-    max-width: 50rem;
+    max-width: 90rem;
   }
 }
 .disco__button {
@@ -723,16 +735,25 @@ li {
   text-align: center;
   font-weight: 500;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
+}
+@media (min-width: 1280px) {
+  .producto__playera p {
+    font-size: 3rem;
+  }
 }
 .producto__button {
   border: none;
-  padding: 2rem 5rem;
   border-radius: 1rem;
   max-width: 25rem;
   cursor: pointer;
   background-color: transparent;
+}
+@media (min-width: 1280px) {
+  .producto__button {
+    padding: 2rem 5rem;
+  }
 }
 .producto__button a {
   color: #313131;
@@ -1291,9 +1312,20 @@ li {
 }
 .informacion__info {
   text-align: center;
+  max-width: 90%;
+}
+@media (min-width: 768px) {
+  .informacion__info {
+    max-width: 80%;
+  }
 }
 .informacion__info h3 {
   font-weight: 500;
+}
+@media (min-width: 1600px) {
+  .informacion__info p {
+    padding: 0 6rem;
+  }
 }
 .informacion__precio {
   text-align: center;
@@ -1331,9 +1363,25 @@ li {
   margin-bottom: 5rem;
   padding: 0 3rem;
 }
+.nosotros__texto span {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3rem;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  .nosotros__texto {
+    padding: 0 15rem;
+  }
+}
 @media (min-width: 1280px) {
   .nosotros__texto {
     padding: 0 20rem;
+  }
+}
+@media (min-width: 1600px) {
+  .nosotros__texto {
+    padding: 0 40rem;
   }
 }
 

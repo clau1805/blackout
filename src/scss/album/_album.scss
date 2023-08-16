@@ -101,9 +101,22 @@
 
     &__info {
         text-align: center;
+        max-width: 90%;
+
+
+
+        @include m.tablet {
+            max-width: 80%;
+        }
 
         h3 {
             font-weight: 500;
+        }
+
+        p {
+            @include m.hd {
+                padding: 0 6rem;
+            }
         }
     }
 

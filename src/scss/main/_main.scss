@@ -14,16 +14,16 @@
     }
 
     @include m.hd {
-        margin-top: 75rem;
+        margin-top: 85rem;
         margin-bottom: 15rem;
     }
 
     @include m.fourK {
-        margin-top: 140rem;
+        margin-top: 150rem;
     }
 
     @include m.fiveK {
-        margin-top: 215rem;
+        margin-top: 225rem;
 
     }
 
@@ -46,8 +46,15 @@
 
     &__info {
         text-align: center;
-        max-width: none;
         padding: 0 2rem;
+        margin: 6rem 0;
+
+        span {
+            font-weight: 500;
+            text-align: center;
+            padding-top: 3rem;
+            font-style: italic;
+        }
 
 
         @include m.tablet {
@@ -57,16 +64,16 @@
 
         @include m.desktop {
 
-            max-width: 40rem;
+            max-width: 75rem;
         }
 
         @include m.hd {
 
-            max-width: 50rem;
+            max-width: 85rem;
         }
 
         @include m.fourK {
-            max-width: 50rem;
+            max-width: 90rem;
         }
     }
 
