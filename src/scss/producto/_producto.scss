@@ -3,7 +3,7 @@
 
 
 
-.productos {
+.producto {
     background-color: v.$white;
     padding: 4rem;
     margin: 3rem 2rem;
@@ -19,11 +19,6 @@
 
         @include m.tablet {
             flex-direction: row;
-            gap: 6rem;
-            margin-bottom: 3rem;
-        }
-
-        @include m.desktop {
             gap: 15rem;
         }
     }
@@ -47,7 +42,7 @@
             text-align: center;
             font-weight: 500;
             margin-top: 0;
-            font-size: 2.2rem;
+            font-size: 3rem;
             text-transform: uppercase;
 
         }
@@ -104,6 +99,26 @@
     }
 
 
+    &__button-vermas {
+        background-color: v.$primary;
+        border: none;
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        max-width: 25rem;
+        position: relative;
+        margin-top: 2rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #183c4b;
+        }
+    }
+
+
+    &__vermas {
+        display: flex;
+        justify-content: center;
+    }
 
 
 
