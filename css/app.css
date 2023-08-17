@@ -1405,7 +1405,6 @@ li {
 @media (min-width: 768px) {
   .productos__grid {
     flex-direction: row;
-    gap: 6rem;
     margin-bottom: 3rem;
   }
 }
