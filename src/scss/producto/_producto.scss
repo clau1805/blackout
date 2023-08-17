@@ -19,7 +19,10 @@
 
         @include m.tablet {
             flex-direction: row;
-            gap: 15rem;
+        }
+
+        @include m.desktop {
+            gap: 10rem;
         }
     }
 
@@ -69,19 +72,22 @@
             color: v.$black;
         }
 
-        &:hover {
-            background-color: v.$primary;
+        @include m.desktop {
+            &:hover {
+                background-color: v.$primary;
 
-            border: none;
-            padding: 2rem 5rem;
-            border-radius: 1rem;
-            max-width: 25rem;
-            cursor: pointer;
+                border: none;
+                padding: 2rem 5rem;
+                border-radius: 1rem;
+                max-width: 25rem;
+                cursor: pointer;
 
-            a {
-                color: v.$white;
+                a {
+                    color: v.$white;
+                }
             }
         }
+
     }
 
     &__imagen {

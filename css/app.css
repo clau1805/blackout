@@ -717,7 +717,11 @@ li {
 @media (min-width: 768px) {
   .producto__grid {
     flex-direction: row;
-    gap: 15rem;
+  }
+}
+@media (min-width: 1280px) {
+  .producto__grid {
+    gap: 10rem;
   }
 }
 .producto__playera {
@@ -758,16 +762,18 @@ li {
 .producto__button a {
   color: #313131;
 }
-.producto__button:hover {
-  background-color: #3c606f;
-  border: none;
-  padding: 2rem 5rem;
-  border-radius: 1rem;
-  max-width: 25rem;
-  cursor: pointer;
-}
-.producto__button:hover a {
-  color: #FFFFFF;
+@media (min-width: 1280px) {
+  .producto__button:hover {
+    background-color: #3c606f;
+    border: none;
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    max-width: 25rem;
+    cursor: pointer;
+  }
+  .producto__button:hover a {
+    color: #FFFFFF;
+  }
 }
 .producto__imagen {
   margin-bottom: 2rem;
@@ -1442,16 +1448,18 @@ li {
 .productos__button a {
   color: #313131;
 }
-.productos__button:hover {
-  background-color: #3c606f;
-  border: none;
-  padding: 2rem 5rem;
-  border-radius: 1rem;
-  max-width: 25rem;
-  cursor: pointer;
-}
-.productos__button:hover a {
-  color: #FFFFFF;
+@media (min-width: 1280px) {
+  .productos__button:hover {
+    background-color: #3c606f;
+    border: none;
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    max-width: 25rem;
+    cursor: pointer;
+  }
+  .productos__button:hover a {
+    color: #FFFFFF;
+  }
 }
 .productos__imagen {
   margin-bottom: 2rem;
